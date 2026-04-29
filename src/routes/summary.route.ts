@@ -22,6 +22,7 @@ router.post("/", async (req, res) => {
         return res.status(401).json({ error: "Unauthorized" });
     }
 
+
     const { income, expenses } = req.body;
 
     if (typeof income !== "number" || !Array.isArray(expenses)) {

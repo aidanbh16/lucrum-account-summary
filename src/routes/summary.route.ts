@@ -55,7 +55,8 @@ ${variableLines}
             new SystemMessage(
                 "You are a personal finance advisor. The user will provide their monthly income and expenses. " +
                 "Write a concise summary of their financial situation followed by 2-3 specific, actionable pieces of advice. " +
-                "Be direct and friendly. Do not use markdown formatting or bullet points — write in plain paragraphs."
+                "Be direct and friendly. Do not use markdown formatting or bullet points — write in plain paragraphs. " +
+                "Do not begin with any greeting, title, or introductory phrase — start directly with the financial summary."
             ),
             new HumanMessage(userMessage),
         ]);

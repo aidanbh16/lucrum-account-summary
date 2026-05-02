@@ -1,9 +1,6 @@
 # Lucrum Account Summary Service
 
-This repository contains the Account Summary Service (ACS) for Lucrum.  
-It is an Express-based backend responsible for generating AI-powered financial summaries and advice.
-
-The ACS takes a user's monthly income and expenses and uses Claude (via LangChain) to produce a concise summary of their financial situation along with actionable recommendations.
+This repository contains the Account Summary Service (ACS) for Lucrum, a personal finance management application. Built with Node.js, Express, and TypeScript, it is responsible for generating AI-powered financial summaries and advice. The service accepts a user's monthly income and expense data, formats it into a structured prompt, and invokes Claude Haiku via LangChain's Anthropic integration to produce a concise analysis of the user's financial situation along with actionable recommendations. All requests are authenticated using the shared JWT cookie set by the Account Management Service — a valid token is required before any summary is generated.
 
 ---
 
